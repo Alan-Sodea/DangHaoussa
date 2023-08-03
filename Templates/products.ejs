@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/tailwind.css">
+    <link rel="stylesheet" href="/Styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-search-bar">
+        <center>
+            <input type="text" name="search">
+            <button onclick='var elt = document.getElementsByClassName("nav-search-bar")[0].style; elt.display = "none"'>X</button>
+        </center>
+    </div>
+
+    <div class="bach">
+
+    </div>
+
+    <div class="nav" style="margin-top: 30px;">
+        <div class="nav-logo"></div>
+        <center>
+            <div class="nav-links">
+                <a class="nav-link l1" href="/">Accueil</a>
+                <a class="nav-link l2" href="/product">Nos Prodiuts</a>
+                <a class="nav-link l3" href="/reserv">Contact & Réservation</a>
+                <div class="under"></div>
+            </div>
+        </center>
+
+        <div class="nav-search" onclick = 'var elt = document.getElementsByClassName("nav-search-bar")[0].style; elt.display = "block"'></div>
+    </div>
+
+    <div class="webstore">
+        <div class="fieldset">
+            <div class="trait"></div>
+            <center><div class="titre">Prodiuts</div></center>
+            <div class="trait"></div>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="img" style='background-image: url("../Images/logement/logement21.jpeg");'></div>
+
+                <div class="buttons">
+                    <span>
+                        <div class="i1"></div>
+                        <div>+ 237 699 97 09 51</div>
+                    </span>
+                    <span>    
+                        <div class="i2"></div>
+                        <div>konzousodea@gmail.com</div>
+                    </span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img" style='background-image: url("../Images/logement/logement31.jpeg");'></div>
+
+                <div class="buttons">
+                    <span>
+                        <div class="i1"></div>
+                        <div>+ 237 699 97 09 51</div>
+                    </span>
+                    <span>    
+                        <div class="i2"></div>
+                        <div>konzousodea@gmail.com</div>
+                    </span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img" style='background-image: url("../Images/logement/logement38.jpeg");'></div>
+
+                <div class="buttons">
+                    <span>
+                        <div class="i1"></div>
+                        <div>+ 237 699 97 09 51</div>
+                    </span>
+                    <span>    
+                        <div class="i2"></div>
+                        <div>konzousodea@gmail.com</div>
+                    </span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img" style='background-image: url("../Images/logement/logement30.jpeg");'></div>
+
+                <div class="buttons">
+                    <span>
+                        <div class="i1"></div>
+                        <div>+ 237 699 97 09 51</div>
+                    </span>
+                    <span>    
+                        <div class="i2"></div>
+                        <div>konzousodea@gmail.com</div>
+                    </span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img" style='background-image: url("../Images/logement/logement37.jpeg");'></div>
+
+                <div class="buttons">
+                    <span>
+                        <div class="i1"></div>
+                        <div>+ 237 699 97 09 51</div>
+                    </span>
+                    <span>    
+                        <div class="i2"></div>
+                        <div>konzousodea@gmail.com</div>
+                    </span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img" style='background-image: url("../Images/logement/logement25.jpeg");'></div>
+
+                <div class="buttons">
+                    <span>
+                        <div class="i1"></div>
+                        <div>+ 237 699 97 09 51</div>
+                    </span>
+                    <span>    
+                        <div class="i2"></div>
+                        <div>konzousodea@gmail.com</div>
+                    </span>
+                </div>
+            </div>
+
+            
+        </div>
+
+        
+    </div>
+
+</body>
+
+<footer>
+    <div class="footer">
+        <div class="title">Sucribe to our newsletter to be aware of all the news</div>
+        <form action="sign" method="POST">
+            <div>
+                <input type="text" name="name" placeholder="Your name" style="width: 350px;">
+                <input type="email" name="mail" placeholder="Your email adress">
+            </div>
+            <div class="error" style="color: red; font-weight: bold;">
+                <%=error%>
+            </div>
+            <input type="submit" value="Subscibe" class="submit">
+        </form>
+    </div>
+</footer>
+</html>
