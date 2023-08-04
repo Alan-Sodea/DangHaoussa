@@ -129,7 +129,7 @@ body
 {
     width: 80px;
     margin-right: 20px;
-    background-image: url("../Images/boeuf.png");
+    /* background-image: url("../Images/boeuf.png"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -145,7 +145,7 @@ body
     margin-left: 20px;
     left: 0;
     cursor: pointer;
-    background-image: url("../Images/search.svg");
+    /* background-image: url("../Images/search.svg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -307,6 +307,7 @@ body
     margin: 20px;
     margin-left: 10px;
     margin-right: 10px;
+    align-items: center;
     overflow: hidden;
     /* outline: 1px solid black; */
     box-shadow: 0.5px 0.5px 1px 1px;
@@ -659,15 +660,15 @@ body
     height: 500px;
     border-radius: 20px;
     background-image:linear-gradient(to bottom right, rgba(255, 237, 237, 0.97), rgb(236, 236, 255));
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     padding: 10px;
-    display: flex;
+    display: none;
     justify-content: space-between;
 }
 
 .caroussel div
 {
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
 }
 
 .caroussel .present
@@ -675,6 +676,9 @@ body
     width: 60%;
     border-radius: 20px 0px 0px 20px;
     margin-right: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
 }
 
 .caroussel .desc
@@ -684,6 +688,100 @@ body
     padding: 15px;
 }
 
+.caroussel .desc .title
+{
+    /* outline: 1px solid black; */
+    margin: 5px;
+    height: 50px;
+    width: calc(100% - 30px);
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 30px;
+    justify-content: center;
+    font-family: "Abel";
+    font-weight: bolder;
+}
 
+.caroussel .desc .infos
+{
+    /* outline: 1px solid black; */
+    text-align: justify;
+    margin: 5px;
+    height: 155px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    font-family: "Abel";
+    font-weight: 600;
+    font-size: 20px;
+}
 
+.caroussel .desc .price
+{
+    /* outline: 1px solid black; */
+    margin: 5px;
+    height: 10px;
+    padding-top: 10px;
+    text-align: center;
+    color: red;
+    margin-bottom: 20px;
+    font-size: 23px;
+    font-family: cursive;
+}
 
+.caroussel .desc .contact
+{
+    /* outline: 1px solid black; */
+    margin: 5px;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.caroussel .desc .contact .number
+{
+    background-color: greenyellow;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Abel";
+    margin-bottom: 20px;
+}
+
+.caroussel .desc .contact .mail
+{
+    background-color: rgb(47, 255, 238);
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Abel";
+    margin-bottom: 20px;
+}
+
+.caroussel .exit:hover
+{
+    background-color: rgb(135, 0, 0);
+    cursor: pointer;
+}
+
+.caroussel .exit
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    outline: 1px solid red;
+    font-size: 30px;
+    padding-bottom: 5px;
+    background-color: red;
+    padding-top: 10;
+    font-family: Abel;
+    border-radius: 0px 20px 0px 0px;
+}
