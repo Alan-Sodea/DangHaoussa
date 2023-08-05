@@ -1,6 +1,6 @@
 # DangHaoussa
 
-##A little app to present a locality
+## A little app to present a locality
 
 To launch the app you need:
   - To install nodejs;
